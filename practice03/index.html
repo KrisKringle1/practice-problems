@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script>
+			var myArray = ["hello", 34, true, false, "goodbye", 56, 12, "25", true];
+			function sortArray(array) {
+				var stringArray = [];
+				var numArray = [];
+				var booleanArray = [];
+
+				for (var arrayIndex = 0; arrayIndex < array.length; arrayIndex++) {
+					if (typeof array[arrayIndex] === "string") {
+						stringArray.push(array[arrayIndex]);
+					} else if (typeof array[arrayIndex] === "boolean") {
+						booleanArray.push(array[arrayIndex]);
+					} else {
+						numArray.push(array[arrayIndex]);
+					}
+				}
+
+				console.log([numArray, booleanArray, stringArray]);
+			}
+		</script>
+		<title>Document</title>
+	</head>
+	<body></body>
+</html>
